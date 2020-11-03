@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_backgroud_color"
+    android:orientation="vertical"
+    tools:context=".FragmentRecherche">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeTitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/textDescriptionRecherche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:scaleType="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Recherchez"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="32sp" />
+
+        <TextView
+            android:layout_below="@+id/textDescriptionRecherche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:scaleType="center"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-black"
+            android:text="vos Artists prefere"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="32sp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/relativeTitre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:hintTextColor="#A8FFFFFF"
+            android:backgroundTint="@color/white"
+            app:startIconDrawable="@drawable/icone_recherche_white"
+            app:startIconTint="@color/white"
+            android:textColorHint="@color/white"
+            android:hint=" ">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_recherche"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="3"
+                android:backgroundTint="@color/white"
+                android:hint="artist,album,morceaux..."
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="#A8FFFFFF"
+                android:textColorLink="@color/white"
+                android:textCursorDrawable="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                app:boxStrokeColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.dd.ShadowLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:sl_shadowRadius="5dp"
+            app:sl_shadowColor="#81000000"
+            app:sl_dx="7dp"
+            app:sl_dy="8dp"
+            app:sl_cornerRadius="0dp">
+
+            <Button
+                android:id="@+id/btn_rechercher"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Recherche"
+                android:textSize="15dp"
+                android:background="@drawable/rect_shadow_button_black"
+                android:textColor="@color/white"
+                />
+
+        </com.dd.ShadowLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

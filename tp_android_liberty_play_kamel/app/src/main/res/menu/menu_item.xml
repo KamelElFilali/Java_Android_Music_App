@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_bibliotheque"
+        android:icon="@drawable/icone_bibliotheque_white"
+        app:showAsAction="always|withText"
+        android:title="Bibliotheque" />
+    <item
+        android:id="@+id/nav_recherche"
+        android:icon="@drawable/icone_recherche_white"
+        android:title="Recherche" />
+    <item
+        android:id="@+id/nav_playlist"
+        android:icon="@drawable/icone_playlist"
+        android:title="Playlist" />
+    <item
+        android:id="@+id/nav_profil"
+        android:icon="@drawable/icone_profil_white"
+        android:title="Profil" />
+</menu>

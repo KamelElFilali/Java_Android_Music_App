@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_backgroud_color"
+    android:orientation="vertical"
+    tools:context=".ResultatRechercheFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeTitreResultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="0dp">
+
+        <TextView
+            android:id="@+id/textDescriptionResultat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:scaleType="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Résultat de votre recherche"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_below="@+id/textDescriptionResultat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:scaleType="center"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-black"
+            android:text="Choisisez l’album de votre choix"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="23sp" />
+
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_below="@+id/relativeTitreResultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:verticalScrollbarPosition="right">
+
+        <LinearLayout
+            android:id="@+id/containerAlbum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+<!--            <include layout="@layout/card_album_recherche"/>-->
+<!--            <include layout="@layout/card_album_recherche"/>-->
+<!--            <include layout="@layout/card_album_recherche"/>-->
+<!--            <include layout="@layout/card_album_recherche"/>-->
+<!--            <include layout="@layout/card_album_recherche"/>-->
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

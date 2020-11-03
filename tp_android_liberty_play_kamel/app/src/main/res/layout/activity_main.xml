@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_backgroud_color"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/activity_video_background" />
+    <TextView
+        android:id="@+id/text_titre_site"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:scaleType="center"
+        android:text="Liberty Play"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/logo_site"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_titre_site"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:layout_marginTop="10dp"
+        android:scaleType="center"
+        android:src="@drawable/logo_liberty_play_gradient" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <com.dd.ShadowLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:sl_shadowRadius="5dp"
+            app:sl_shadowColor="#81000000"
+            app:sl_dx="7dp"
+            app:sl_dy="8dp"
+            app:sl_cornerRadius="10dp">
+
+            <Button
+                android:id="@+id/connexion_button"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Se connecter"
+                android:textSize="15dp"
+                android:background="@drawable/rect_shadow_button_gradien"
+                android:textColor="@color/white"
+                />
+
+        </com.dd.ShadowLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
